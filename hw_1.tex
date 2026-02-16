@@ -13,6 +13,75 @@
 \[=\frac{1}{2}(\epsilon_{ijk}\partial^i\partial^jV^k - \epsilon_{ijk}\partial^j\partial^iV^k)\]
 \[=\frac{1}{2}(\epsilon_{ijk}\partial^i\partial^jV^k - \epsilon_{ijk}\partial^i\partial^jV^k) = 0 \hspace{1em} \square \]
 
+\subsection{b}
+\[\vec{\nabla}\times(\vec{\nabla}\times\vec{V})=\vec{\nabla}(\vec{\nabla}\cdot\vec{V})-\vec{\nabla}^2\vec{V}\]
+\[\epsilon_{ijk}\partial_j(\epsilon_{klm}\partial_lv_m)=\partial_i(\partial_jv_j)-\partial_j\partial_jv_i\]
+\[\epsilon_{ijk}\epsilon_{klm}\partial_j\partial_lv_m=\partial_j\partial_iv_j-\partial_j\partial_jv_i\]
+\[(\delta_{il}\delta{jm}-\delta{im}\delta{jl})\partial_j\partial_lv_m=\partial_j\partial_iv_j-\partial_j\partial_jv_i\]
+\[\partial_j\partial_iv_j-\partial_j\partial_jv_i=\partial_j\partial_iv_j-\partial_j\partial_jv_i \hspace{1em} \square\]
+
+\section{Question 2}
+
+for \(r \neq 0 \)
+\[\nabla^2\left(\frac{1}{r}\right)= \frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2 \frac{\partial r^{-1}}{\partial r}\right) = 0\]
+for \(r = 0\)
+\[\int \nabla^2 r^{-1}dr^3 = \oint \nabla r^{-1}dS\]
+where \(\nabla r^{-1} = \frac{-\hat{r}}{r^2}\) and \(dS = \hat{r}r^2d\Omega\)
+\[\oint \nabla r^{-1}\cdot dS = -\int dr - 4\pi\]
+
+thus \(r = -4\pi\delta^3(\vec{r})\)
+
+\section{Question 3}
+
+\[\nabla\cdot\vec{E}=\partial_iE_i\]
+
+\[0=(\nabla\times E)=\epsilon_{ijk}\partial_j E_k=-\epsilon_{ijk}\partial_j\partial_k V \]
+
+\[\nabla^2V \iff \partial_i\partial_iV=-\partial_iE_i=\frac{-\rho}{\epsilon_0}\]
+
+\[\nabla^2 V = \frac{-\rho}{\epsilon_0}\]
+when
+\((\nabla\times\vec{E})= 0 \hspace{2em} \square \)
+
+
+\section{Question 4}
+
+Given a point charge in the corner of a cube, and we are supposed to calculate the flux of \(\vec{E}\) going through the opposite facing side as given in the problem sheet. We can construct a larger cube consisting of 8 smaller cubers, and given gauses law, the total flux of the charge is equal to the flux passing through the 24 external faces of the 8 cubes. 
+%insert thing here
+\[\phi = \frac{q}{24 \epsilon_0}\]
+
+\section{Question 5}
+
+\[F_m = q(\vec{v}\times\vec{B})\]
+\[W=\int f dr = \int F \vec{v}dt\]
+\[P:= \frac{dW}{dt}=F\cdot v =q(\vec{v}\times\vec{B}) \cdot v = 0\]
+\section{Question 6}
+Deriving the continuity equation starting with inhomogenous maxwell equation
+\[\partial_\mu F^{\mu\nu}=\mu_0J^\nu\]
+\[\partial_\nu(\partial_\mu F^{\mu\nu})=\mu_0\partial_\nu J^\nu\]
+but \(F^{\mu\nu}\) is anti symmetric under exchange of \(\mu \iff \nu \) and \(\partial_\nu\partial_\mu\) is symmetric under exchange of \(\mu \iff \nu \). hence it must be true that \(\partial_\nu\partial_\mu F^{\mu\nu} = 0\). thus
+\[\partial_\nu J^\nu = 0\]
+\[\partial_\nu J^\nu = \partial_0 J^0 + \partial_i J^i = 0\]
+\[\frac{1}{c}\frac{\partial (c\rho)}{\partial t}+\nabla \cdot \vec{J} = 0\]
+\[\nabla \cdot\vec{J} + \frac{\partial \rho}{\partial t} = 0\]
+\section{Question 7}
+\[[\vec{E}]=\frac{V}{m}\]
+\[[V]=kgm^2s{-3}A^{-1}\]
+\[[\vec{E}]=kgms^{-3}A^{-1}\]
+\[[\vec{B}]=kgs^{-2}A^{-1}\]
+where \([m]=[s]=E^{-1}\), \([kg]=E^{+1}\), and \([I]=[t^{-1}]=E^{+1}\), so
+\[[\vec{E}]=(E)(E^{-1})(E^{3})(E^{-1})=E^2\]
+\[[\vec{B}]=(E)(E^2)(E^{-1})=E^2\]
+
+\section{Question 8}
+
+\[c=\frac{1}{\sqrt{\epsilon_0 \mu_0}}\]
+\[[F]=kg^{-1}m^{-2}s^4A^2\]
+\[[H]=kg m^2s^{-2}A^{-2}\]
+\[[\epsilon_0] = Fm^{-1}=kg^{-1}m^{-3}s^4A^2\]
+\[[\mu_0]=Hm^{-1}=kgms^{-2}A^{-2}\]
+\[[c]=[\frac{1}{\sqrt{\epsilon_0 \mu_0}}]=((kg^{-1}m^{-3}s^4A^2)(kgms^{-2}A^{-2}))^\frac{-1}{2}=\]
+\[=(m^{-2}s^2)^\frac{-1}{2}=ms^{-1}\]
 
 
 \end{document}
